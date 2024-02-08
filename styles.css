@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5ebeb;
+}
+
+.container {
+    text-align: center;
+}
+
+#gifContainerImg {
+    width: 60%;
+    height: 60%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+#siBtn, #noBtn {
+    padding: 20px 30px;
+    font-size: 25px;
+    margin: 50px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Agregar sombra */
+}
+
+#siBtn {
+    background-color: #00b894; /* Verde */
+    border: 2px solid #fff; /* Borde blanco */
+}
+
+#siBtn:hover {
+    transform: scale(1.1); /* Escalar ligeramente al pasar el mouse */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Incrementar sombra */
+}
+
+#noBtn {
+    background-color: #d63031; /* Rojo */
+    border: 2px solid #fff; /* Borde blanco */
+}
+
+#noBtn:hover {
+    transform: scale(1.1); /* Escalar ligeramente al pasar el mouse */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Incrementar sombra */
+}
+
+
+#noBtn span {
+    font-size: 18px;
+    color: #fcf4f4; 
+}
+
+#siBtn:hover{
+    background-color: #053a03; 
+}
+#noBtn:hover {
+    background-color: #641e0d; /* Cambia a otro color en hover, puedes ajustar el valor según tus preferencias */
+}
+.bg-green {
+    background-color: #ffffff; /* Nuevo color de fondo verde */
+}
+
+#messageContainer {
+    font-size: 28px; /* Ajusta el tamaño de la fuente según tus preferencias */
+    color: #ee1111; /* Color verde lima para hacer contraste con el rojo */
+    font-family: 'Pacifico', cursive; /* Utilizando la fuente 'Pacifico' o la que prefieras */
+    text-shadow: 2px 2px 4px #d61313; /* Sombra de texto para resaltar */
+    animation: pulse 0.5s infinite alternate; /* Animación pulsante */
+}
+
+#question {
+    font-size: 40px; /* Tamaño de fuente más grande */
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.3); /* Zoom más grande */
+    }
+}
+
